@@ -10,7 +10,7 @@
     "npm:svelte-check@4": "4.0.5_svelte@5.1.3__acorn@8.14.0_typescript@5.6.3",
     "npm:svelte@5": "5.1.3_acorn@8.14.0",
     "npm:sveltekit-adapter-deno@~0.16.1": "0.16.1_@sveltejs+kit@2.7.3__@sveltejs+vite-plugin-svelte@4.0.0___svelte@5.1.3____acorn@8.14.0___vite@5.4.10__svelte@5.1.3___acorn@8.14.0__vite@5.4.10_@sveltejs+vite-plugin-svelte@4.0.0__svelte@5.1.3___acorn@8.14.0__vite@5.4.10_svelte@5.1.3__acorn@8.14.0_vite@5.4.10",
-    "npm:tailwindcss@^3.4.14": "3.4.14_postcss@8.4.47",
+    "npm:tailwindcss@^3.4.9": "3.4.14_postcss@8.4.47",
     "npm:typescript@5": "5.6.3",
     "npm:vite@^5.0.3": "5.4.10"
   },
@@ -1129,12 +1129,10 @@
         "npm:@sveltejs/vite-plugin-svelte@4",
         "npm:@types/deno@2",
         "npm:autoprefixer@^10.4.20",
-        "npm:postcss@^8.4.47",
-        "npm:rollup@4.24.0",
         "npm:svelte-check@4",
         "npm:svelte@5",
         "npm:sveltekit-adapter-deno@~0.16.1",
-        "npm:tailwindcss@^3.4.14",
+        "npm:tailwindcss@^3.4.9",
         "npm:typescript@5",
         "npm:vite@^5.0.3"
       ]
