@@ -1,14 +1,6 @@
 import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig, searchForWorkspaceRoot} from 'vite';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-	plugins: [sveltekit()],
-	server: {
-		fs: {
-			allow: [
-				searchForWorkspaceRoot(Deno.cwd()),
-				'/fonts'
-			]
-		}
-	}
+	plugins: [sveltekit()]
 });
