@@ -37,8 +37,8 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "matteo-nc-dot-com"
+          project: "matteo-nc"
           entrypoint: "mod.ts"
           root: "build"
-          
-          
+
+
