@@ -1,6 +1,7 @@
 <script lang="ts">
     import {fade} from "svelte/transition";
     import {onMount} from "svelte";
+    import jetBrainsFont from '$lib/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2';
     import github from '$lib/assets/svg/github.svg';
     import linkedin from '$lib/assets/svg/linkedin.svg';
 
@@ -19,7 +20,7 @@
 
 <svelte:head>
     <title>{domain}</title>
-    <link as="font" crossorigin="anonymous" href="/src/lib/assets/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2"
+    <link as="font" crossorigin="anonymous" href="{jetBrainsFont}"
           rel="preload"
           type="font/woff2">
 </svelte:head>
