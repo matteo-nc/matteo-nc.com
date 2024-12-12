@@ -5,7 +5,7 @@
     import github from '$lib/assets/svg/github.svg';
     import linkedin from '$lib/assets/svg/linkedin.svg';
     import file from '$lib/assets/svg/file.svg';
-    import Cv from './Cv.svelte';
+    import CV from './CV.svelte';
 
     const domain = 'matteo-nc.com';
     const githubUrl = 'https://github.com/matteo-nc';
@@ -14,6 +14,7 @@
     const year = new Date().getFullYear();
 
     let mounted = $state(false);
+    let showCV = $state(false);
 
     onMount(async () => {
         mounted = true;
@@ -26,6 +27,8 @@
           rel="preload"
           type="font/woff2">
 </svelte:head>
+
+<CV bind:showCV/>
 
 <div class="flex flex-col w-dvh h-dvh bg-white dark:bg-black">
     <div class="flex flex-grow justify-center items-center">
@@ -54,7 +57,8 @@
                 </div>
                 <div class="flex flex-row justify-center pt-10">
                     <button class="inline-flex items-center space-x-1 font-bold py-2 px-3 rounded bg-black hover:bg-gray-700 active:bg-gray-600 text-white text-2xl dark:bg-white dark:hover:bg-gray-300 dark:active:bg-gray-400 dark:text-black dark:shadow-white dark:drop-shadow-[0_0_6px_var(--tw-shadow-color)]"
-                            transition:fade={{ delay: 3000, duration: 1000 }}>
+                            transition:fade={{ delay: 3000, duration: 1000 }}
+                            on:click={() => (showCV = true)}>
                         <img src={file} alt="File with person inside icon" class="dark:invert"/>
                         <span>CV</span>
                     </button>
