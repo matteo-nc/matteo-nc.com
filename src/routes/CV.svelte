@@ -20,20 +20,20 @@
         class="bg-transparent"
         onclose={() => (showCV = false)}
         onclick={(e) => { if (e.target === dialog) dialog.close(); }}>
-    <div>
-        <!--    Header-->
-        <div class="flex flex-row justify-between items-center p-2 bg-transparent">
-            <h1 class="text-2xl font-bold dark:text-white dark:text-shadow dark:shadow-white">{cvFileName}</h1>
+    <div class="flex flex-col max-h-[90vh] max-w-[90vw]">
+        <!-- Header -->
+        <div class="flex flex-row justify-between items-center p-4 sticky top-0 z-10">
+            <h1 class="text-2xl font-bold dark:text-white dark:text-shadow dark:shadow-white font-jetBrainsMono">{cvFileName}</h1>
             <button class="text-2xl font-bold dark:text-white dark:text-shadow dark:shadow-white"
                     onclick={() => (dialog.close())}>&cross;
             </button>
         </div>
         <!--    Content-->
-        <div class="flex flex-row justify-center items-center">
+        <div class="flex-1 overflow-y-scroll px-4">
             <img src={cv} alt="My curriculum vitae" class="w-full h-full"/>
         </div>
         <!--    Footer-->
-        <div class="flex flex-row justify-center items-center p-2">
+        <div class="flex flex-row justify-center items-center p-4 sticky bottom-0 z-10">
             <a href={cv}
                download={cvFileName}
                class="inline-flex items-center">

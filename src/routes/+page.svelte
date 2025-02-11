@@ -45,20 +45,20 @@
                        transition:fade={{ delay: 2000, duration: 500 }}>
                         <img src={github} alt="GitHub logo"
                              class="md:w-20 w-16 p-1 dark:invert dark:shadow-white dark:drop-shadow-[0_0_6px_var(--tw-shadow-color)]"/>
-                        <span class="md:text-2xl sm:text-l sm:block md:m-4 m-2 hidden">GitHub</span>
+                        <span class="font-semibold md:text-2xl sm:text-l sm:block md:m-4 m-2 hidden">GitHub</span>
                     </a>
                     <div class="w-8"></div>
                     <a href="{linkedinUrl}" target="_blank" class="flex flex-row items-center m-3"
                        transition:fade={{ delay: 2500, duration: 500 }}>
                         <img src={linkedin} alt="LinkedIn logo"
                              class="md:w-20 w-16 dark:invert dark:shadow-white dark:drop-shadow-[0_0_6px_var(--tw-shadow-color)]"/>
-                        <span class="md:text-2xl sm:text-l sm:block md:m-4 m-2 hidden">LinkedIn</span>
+                        <span class="font-semibold md:text-2xl sm:text-l sm:block md:m-4 m-2 hidden">LinkedIn</span>
                     </a>
                 </div>
                 <div class="flex flex-row justify-center pt-10">
                     <button class="inline-flex items-center space-x-1 font-bold py-2 px-3 rounded bg-black hover:bg-gray-700 active:bg-gray-600 text-white text-2xl dark:bg-white dark:hover:bg-gray-300 dark:active:bg-gray-400 dark:text-black dark:shadow-white dark:drop-shadow-[0_0_6px_var(--tw-shadow-color)]"
                             transition:fade={{ delay: 3000, duration: 1000 }}
-                            on:click={() => (showCV = true)}>
+                            onclick={() => (showCV = true)}>
                         <img src={file} alt="File with person inside icon" class="dark:invert"/>
                         <span>CV</span>
                     </button>
