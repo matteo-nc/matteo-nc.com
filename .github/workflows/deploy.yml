@@ -38,7 +38,5 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: "matteo-nc"
-          entrypoint: "mod.ts"
+          entrypoint: "index.js"
           root: "build"
-
-
