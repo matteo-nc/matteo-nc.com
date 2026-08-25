@@ -1,8 +1,9 @@
 <script>
     import cv from "$lib/assets/svg/cv.svg";
+    import cv_download from "$lib/assets/pdf/cv.pdf";
     import download from "$lib/assets/svg/download.svg";
 
-    const cvFileName = "curriculum_vitae.svg";
+    const cvFileName = "curriculum_vitae.pdf";
 
     let {showCV = $bindable()} = $props();
 
@@ -33,7 +34,7 @@
         </div>
         <!--    Footer-->
         <div class="flex flex-row justify-center items-center p-4 sticky bottom-0 z-10">
-            <a href={cv}
+            <a href={cv_download}
                download={cvFileName}
                class="inline-flex items-center">
                 <img src={download} alt="Download icon"
