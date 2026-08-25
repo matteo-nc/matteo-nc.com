@@ -31,7 +31,7 @@
 <CV bind:showCV/>
 
 <div class="flex flex-col w-dvh h-dvh bg-white dark:bg-black">
-    <div class="flex flex-grow justify-center items-center">
+    <div class="flex grow justify-center items-center">
         <div class="flex-wrap text-black dark:text-white dark:text-shadow dark:shadow-white">
             {#if mounted}
                 <div class="flex flex-row">
