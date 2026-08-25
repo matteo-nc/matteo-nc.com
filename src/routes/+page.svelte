@@ -30,13 +30,13 @@
 
 <CV bind:showCV/>
 
-<div class="flex flex-col w-dvh h-dvh bg-white dark:bg-black">
+<div class="flex flex-col w-dvw h-dvh bg-white dark:bg-black">
     <div class="flex grow justify-center items-center">
         <div class="flex-wrap text-black dark:text-white dark:text-shadow dark:shadow-white">
             {#if mounted}
-                <div class="flex flex-row">
+                <div class="flex flex-row w-full justify-center px-3">
                     <h1 id="domainDiv"
-                        class="md:text-7xl sm:text-6xl text-5xl font-jetBrainsMono"
+                        class="w-full text-center md:text-7xl sm:text-6xl text-5xl font-jetBrainsMono"
                         transition:fade={{ duration: 1500 }}>
                         {domain}</h1>
                 </div>

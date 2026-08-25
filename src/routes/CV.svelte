@@ -1,26 +1,25 @@
 <script>
-  import cv from "$lib/assets/svg/cv.svg";
-  import download from "$lib/assets/svg/download.svg";
+    import cv from "$lib/assets/svg/cv.svg";
+    import download from "$lib/assets/svg/download.svg";
 
-  const cvFileName = "curriculum_vitae.svg";
+    const cvFileName = "curriculum_vitae.svg";
 
-  let {showCV = $bindable()} = $props();
+    let {showCV = $bindable()} = $props();
 
-  let dialog = $state(); // HTMLDialogElement
+    let dialog = $state(); // HTMLDialogElement
 
-  $effect(() => {
-    if (showCV) {
-      dialog.showModal();
-    }
-  });
+    $effect(() => {
+        if (showCV) {
+            dialog.showModal();
+        }
+    });
 </script>
 
-<!-- svelte-ignore a11y_click_events_have_key_events, a11y_no_noninteractive_element_interactions-->
 <dialog bind:this={dialog}
         class="bg-transparent"
         onclose={() => (showCV = false)}
         onclick={(e) => { if (e.target === dialog) dialog.close(); }}>
-    <div class="flex flex-col max-h-[90vh] max-w-[90vw]">
+    <div class="fixed left-1/2 top-1/2 flex w-[90vw] max-h-[90vh] -translate-x-1/2 -translate-y-1/2 flex-col">
         <!-- Header -->
         <div class="flex flex-row justify-between items-center p-4 sticky top-0 z-10">
             <h1 class="text-2xl font-bold dark:text-white dark:text-shadow dark:shadow-white font-jetBrainsMono">{cvFileName}</h1>
