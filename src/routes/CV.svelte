@@ -1,6 +1,6 @@
 <script>
-    import cv from "$lib/assets/svg/cv.svg";
-    import cv_download from "$lib/assets/pdf/cv.pdf";
+    import cv from "$lib/assets/svg/cv-fr.svg";
+    import cv_download from "$lib/assets/pdf/cv-fr.pdf";
     import download from "$lib/assets/svg/download.svg";
 
     const cvFileName = "curriculum_vitae.pdf";
