@@ -12,6 +12,7 @@
   "dependencies": {
   },
   "devDependencies": {
+    "@deno/svelte-adapter": "^0.2.1",
     "@sveltejs/adapter-node": "^5.5.7",
     "@sveltejs/kit": "^2.70.3",
     "@sveltejs/vite-plugin-svelte": "^7.3.0",
