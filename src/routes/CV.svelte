@@ -5,8 +5,6 @@
     import cv_fr_download from "$lib/assets/pdf/cv-fr.pdf";
     import download from "$lib/assets/svg/download.svg";
 
-    const cvFileName = "curriculum_vitae.pdf";
-
     type languages = "en" | "fr";
     const cvVersions: Record<languages, { image: string; download: string }> = {
         en: { image: cv_en, download: cv_en_download },
@@ -31,7 +29,10 @@
     <div class="fixed left-1/2 top-1/2 flex w-[90vw] max-h-[90vh] -translate-x-1/2 -translate-y-1/2 flex-col">
         <!-- Header -->
         <div class="flex flex-row justify-between items-center p-4 sticky top-0 z-10">
-            <h1 class="text-2xl font-bold dark:text-white dark:text-shadow dark:shadow-white font-jetBrainsMono">{cvFileName}</h1>
+            <h1 class="text-2xl font-bold dark:text-white dark:text-shadow dark:shadow-white font-jetBrainsMono">
+                <span class="sm:hidden">curriculum.pdf</span>
+                <span class="hidden sm:inline">curriculum_vitae.pdf</span>
+            </h1>
             <button class="text-2xl font-bold dark:text-white dark:text-shadow dark:shadow-white"
                     onclick={() => (dialog.close())}>&cross;
             </button>
@@ -53,7 +54,7 @@
                 </button>
             </div>
             <a href={cvVersions[language].download}
-               download={cvFileName}
+               download={`curriculum_vitae_${language}.pdf`}
                class="inline-flex items-center">
                 <img src={download} alt="Download icon"
                      class="w-8 invert dark:invert-0 dark:shadow-white dark:drop-shadow-[0_0_6px_var(--tw-shadow-color)]"/>

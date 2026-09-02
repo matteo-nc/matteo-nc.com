@@ -36,7 +36,7 @@
             {#if mounted}
                 <div class="flex flex-row w-full justify-center px-3">
                     <h1 id="domainDiv"
-                        class="w-full text-center md:text-7xl sm:text-6xl text-5xl font-jetBrainsMono"
+                        class="w-full text-center md:text-7xl sm:text-6xl text-4xl font-jetBrainsMono"
                         transition:fade={{ duration: 1500 }}>
                         {domain}</h1>
                 </div>
